@@ -6,7 +6,10 @@
 
 __global__ void vector_add(const float* A, const float* B, float* C, int N) {
     int idx = blockIdx.x * blockDim.x + threadIdx.x;
+
+    // guard
     if (idx < N){
+        // vector add
         C[idx] = A[idx] + B[idx];
     }
 }
