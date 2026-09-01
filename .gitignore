@@ -1,3 +1,5 @@
 .DS_Store
 /rust/target
-
+leetgpu/.support
+.vscode
+*.leetgpu.json
