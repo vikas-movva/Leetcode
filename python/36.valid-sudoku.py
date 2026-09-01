@@ -27,9 +27,9 @@ class Solution:
             return True
         
         def bitmask() -> bool:
-            rows = [0 for _ in range(9)] 
-            cols = [0 for _ in range(9)]
-            grid = [0 for _ in range(9)]
+            rows = [0] * 9
+            cols = [0] * 9
+            grid = [0] * 9
             
             for i in range(9):
                 for j in range(9):
