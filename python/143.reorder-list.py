@@ -16,7 +16,7 @@ class Solution:
         Do not return anything, modify head in-place instead.
         """
         if not head or not head.next:
-            return head
+            return
         
         # find middle of list
         sp = fp = head
@@ -30,7 +30,7 @@ class Solution:
         # and cut off sp
         prev, curr, sp.next = None, sp.next, None
         while curr:
-            next, curr.next, prev, curr = curr.next, prev, curr, curr.next
+            next, curr.next, prev = curr.next, prev, curr
             curr = next
         
         # merge two lists
@@ -41,6 +41,5 @@ class Solution:
             l2.next = n1
             l1, l2 = n1, n2
             
-        return head   
 # @lc code=end
     
