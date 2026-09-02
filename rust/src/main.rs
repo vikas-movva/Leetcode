@@ -4,6 +4,7 @@
 #[path = "136.single-number.rs"] mod single_number;
 #[path = "226.invert-binary-tree.rs"] mod invert_binary_tree;
 #[path = "21.merge-two-sorted-lists.rs"] mod merge_two_sorted_lists;
+#[path = "252.meeting-rooms.rs"] mod meeting_rooms;
 pub struct Solution{}
 
 
